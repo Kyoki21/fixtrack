@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "FixTrack",
+    "slug": "fixtrack",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "FixTrack uses the camera to take an avatar photo.",
+        "NSPhotoLibraryUsageDescription": "FixTrack uses the gallery to choose an avatar."
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "FixTrack uses the gallery to choose an avatar.",
+          "cameraPermission": "FixTrack uses the camera to take an avatar photo."
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
